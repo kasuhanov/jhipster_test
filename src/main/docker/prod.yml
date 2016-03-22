@@ -1,0 +1,10 @@
+yeo-postgresql:
+  container_name: yeo-postgresql
+  image: postgres:9.4.5
+  # volumes:
+  #   - ~/volumes/jhipster/yeo/postgresql/:/var/lib/postgresql/
+  environment:
+    - POSTGRES_USER=yeo
+    - POSTGRES_PASSWORD=
+  ports:
+    - "5432:5432"
